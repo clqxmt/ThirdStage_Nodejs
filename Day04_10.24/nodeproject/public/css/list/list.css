@@ -1,0 +1,195 @@
+.navbar{
+    margin-bottom:0;
+
+}
+.list-container{
+    width:100%;
+    height:100%;
+    display:flex;
+}
+.slider{
+    width:190px;
+    height:100%;
+    float:left;
+    border-right:1px solid #e5e5e5;
+    background: #f9f9f9;
+}
+.slider ul li{
+    width: 100%;
+    line-height:40px;
+    text-align:center;
+    font-size:14px;
+    border-bottom: 1px solid #e5e5e5;
+    cursor: pointer;
+}
+.slider ul .active{
+    background:#fff;
+    color:#333;
+}
+.content{
+    flex:1;
+    /* background:#ff0; */
+}
+
+.content th{
+    text-align:center;
+}
+
+.content td{
+    text-align:center;
+    height:100px;
+    margin-top:25px;
+    line-height:100px !important;
+}
+.content table td img{
+    display:block;
+    width:90px;
+    height:120px;
+}
+.content form{
+    width:400px;
+}
+.content .books-form{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+   
+}
+.content .upload{
+    width:100%;
+    height:150px;
+    border:1px dashed #e5e5e5;
+    text-align:center;
+    line-height:50px;
+}
+
+.content #booksImage{
+    opacity:0;
+    
+}
+
+/* //设置模态框中的上传图片按钮样式 */
+.content  .upload{
+    position: relative;
+}
+.content  .upload div{
+    
+    width:100%;
+    text-align:center;
+    line-height:120px;
+    height:120px;
+    position: absolute;
+    left:0;
+}
+.content  .upload input{
+    /* float:left; */
+    position: absolute;
+    width:90px;
+    height:120px;
+    left:0;
+}
+/* articleList */
+.content .article{
+    width:100%;
+    height:100%;
+}
+.content .article-form{
+    width:100%;
+    
+}
+.content #editor{
+    width:100%;
+    /* height:500px; */
+}
+.content #content{
+    padding:0;
+    display:inline-block;
+    width:386px;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    margin-top:8px;
+    text-align:center;
+    margin-left:220px;
+} 
+.content #article-form tr{
+    border-top:1px solid #ddd;
+}
+.content #article-form td{
+    /* display:inline-block;
+    width:300px; */
+    border-top:none;
+    line-height:100px;
+}
+.content #article-form th{
+    /* display:inline-block;
+    width:300px; */
+    border-bottom:none;
+}
+
+.content .articleTitle{
+    cursor: pointer;
+}
+
+/* home */
+.content .top{
+    margin-top:25px;
+}
+
+
+.content .echarts{
+    padding: 20px 24px 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 24px;
+    width:245px;
+    height:180px;
+    background:#ff0;
+    float:left;
+    margin-left:25px;
+}
+.content .main{
+    width:1009px;
+    height:405px;
+}
+
+
+/* 用户中心 */
+.content .headImg img{
+    display:inline-block;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+
+/* 分页 */
+
+.content nav{
+    display:flex;
+    justify-content: center;
+}
+
+/* 操作 */
+.action{
+    display:flex;
+    position: relative;
+}
+.action select{
+    width:100px;
+}
+/* 搜索框 */
+.search{
+    width:200px;
+}
+#searchContent{
+    display:none;
+    width:200px;
+    position: absolute;
+    left:100px;
+    top:34px;
+    border:1px solid #ddd;
+    background:#fff;
+}
+#searchContent li{
+    cursor: pointer;
+}

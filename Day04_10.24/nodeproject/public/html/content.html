@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        html,body{
+            width:100%;
+            height:100%;
+        }
+        .container{
+           width:1000px;
+           height:100%;
+           margin:0 auto;
+          
+        }
+        .container h2{
+            text-align:center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+    </div>
+</body>
+</html>
+<script src="../js/lib/jquery-1.11.3.js"></script>
+<script>
+    
+    let id=window.location.search.replace("?id=","");
+    
+    $.ajax({
+        type:"get",
+        url:"/articles/showContent",
+        data:{
+            id
+        },
+        success:handleSuccessCb
+    })
+    function handleSuccessCb(data){
+        console.log(data);
+        if(data.data.status===1){
+            let str="";
+            str=`
+            <h2>${data.data.list.articleTitle}</h2>
+            <div class="content">${data.data.list.articleContent}</div>
+            `
+            $(".container").html(str);
+        }else{
+            alert(data.data.info);
+        }
+    }
+</script>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= goods_list %></title>
+    <link rel='stylesheet' href='/stylesheets/index.css' />
+    <script src="/javascripts/index.js"></script>
+  </head>
+  <body>
+    <!-- <h6><%= goods_list %></h6>
+    <p>Welcome to <%= goods_list %></p> -->
+      <%- include("./header.ejs")%>
+      <div class="main">
+        <ul>
+            <%for(var i=0;i<goods_list.length;i++){%>
+              <li>
+                <div class="img">
+                  <img src="<%= goods_list[i].image%>" alt="">
+                </div>
+                <div class="title">
+                  <p><%= goods_list[i].title%></p>
+                </div>
+                <div class="price">
+                  <p><span>￥</span><%= goods_list[i].price%></p>
+                </div>
+              </li>
+            <%}%>
+        </ul>
+    </div>
+  </body>
+</html>

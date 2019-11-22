@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/index1.css">
+    <link rel="stylesheet" href="../index.css">
+    <script src="../js/index.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script>
+        $(function(){
+            // $(".register .register_btn").click(function(){
+            //     $.ajax({
+            //         type:"GET",
+            //         url:"http://localhost:3000/user/userInfo.html",
+            //         data:{
+            //             username:$(".register .username").val(),
+            //             password:$(".register .pwd").val()
+            //         },
+            //         success:function(data){
+            //             console.log(data);
+            //         }
+            //     })
+            // })
+            // $(".sign .sign_btn").click(function(){
+            //     $.ajax({
+            //         type:"GET",
+            //         url:"../user/sign.html",
+            //         data:{
+            //             username:$(".sign .username").val(),
+            //             password:$(".sign .pwd").val()
+            //         },
+            //         success:function(data){
+            //             console.log(data);
+            //         }
+            //     })
+            // })
+        })
+    </script>
+</head>
+<body>
+    <h1>index.html</h1>
+    <img src="../img/patchboard.jpg" alt="">
+    <img src="../img/voicebox.jpg" alt="">
+    <img src="../img/xiaomi9.png" alt="">
+    <img src="../img/xiaomicc9.jpg" alt="">
+    <form action="http://localhost:3000/user/userInfo.html" class="register">
+        <input type="text" name="username" class="username">
+        <input type="password" name="password" class="pwd">
+        <input type="submit" value="提交">
+        <!-- <input type="button" value="注册" class="register_btn"> -->
+    </form>
+    <form action="http://localhost:3000/user/sign.html" class="sign">
+        <input type="text" name="username" class="username">
+        <input type="password" name="password" class="pwd">
+        <input type="submit" value="登录" class="sign_btn">
+        <!-- <input type="button" value="登录" class="sign_btn"> -->
+    </form>
+</body>
+</html>
